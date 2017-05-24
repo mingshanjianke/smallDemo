@@ -166,7 +166,7 @@
                 oloop=Math.floor(this.posterItems.size()/2);
             leftSlice.each(function(i){
                 $(this).css({
-                    zIndex:level,
+                    zIndex:i,
                     width:lw,
                     height:lh,
                     opacity:1/oloop,
