@@ -150,7 +150,7 @@
                 rh=rh*self.setting.scale;
                 var j=i;
                 $(this).css({
-                    zIndex:i,
+                    zIndex:level,
                     width:rw,
                     height:rh,
                     opacity:1/(++i),
