@@ -21,8 +21,7 @@ function traverseDOM(node){
     }
   }
 }
-setTimeout(function(){
-  traverseDOM(document);
-  console.log("this is plugin output");
-},0);
+
+traverseDOM(document);
+console.log("this is plugin output");
 
