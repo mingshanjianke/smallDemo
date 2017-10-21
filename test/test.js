@@ -20,7 +20,7 @@ function traverseDOM(node){
     }
   }
 }
-console.log(document);
+console.log(document.body);
 traverseDOM(document);
 
 
