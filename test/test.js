@@ -1,12 +1,11 @@
 function traverseDOM(node){
   var childLen=node.childNodes.length;
-  console.log("traverseDOM");
   if(childLen==0){
   }else{
     for(var i=0;i<childLen;i++){
       var childTmp=node.childNodes[i];
+      console.log(childTmp);
       if(childTmp.nodeName=="DIV"){
-        console.log(childTmp);
         if(childTmp.style){
           var obj=window.getComputedStyle(childTmp);
           if(obj.hasOwnProperty("position")){
@@ -23,5 +22,5 @@ function traverseDOM(node){
 }
 console.log(document);
 traverseDOM(document);
-console.log("this is plugin output");
+
 
