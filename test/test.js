@@ -5,10 +5,6 @@ function traverseDOM(node){
     for(var i=0;i<childLen;i++){
       var childTmp=node.childNodes[i];
       if(childTmp.nodeName=="DIV"){
-        if(childTmp.id=="tanx-popwin-outermm_51073678_5024723_15460009"){
-          var obj=window.getComputedStyle(childTmp);
-          console.log(obj);
-        }
         var obj=window.getComputedStyle(childTmp);
         if(obj.hasOwnProperty("position")){
           if(obj.position=="fixed"){
@@ -26,7 +22,7 @@ function traverseDOM(node){
 
 setTimeout(function(){
   traverseDOM(document.body);
-},500);
+},0);
 
 
 
