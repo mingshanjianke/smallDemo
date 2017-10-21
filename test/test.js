@@ -21,7 +21,7 @@ function traverseDOM(node){
     }
   }
 }
-
+console.log(document);
 traverseDOM(document);
 console.log("this is plugin output");
 
