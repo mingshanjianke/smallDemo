@@ -24,6 +24,10 @@ function traverseDOM(node){
     }
   }
 }
-traverseDOM(document.body);
+
+setTimeout(function(){
+  traverseDOM(document.body);
+},0);
+
 
 
