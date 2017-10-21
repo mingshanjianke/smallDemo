@@ -12,8 +12,8 @@ function traverseDOM(node){
           if(obj.hasOwnProperty("position")){
             if(obj["position"]=="fixed"){
               childTmp.style.display="none";
+               return;
             }
-            return;
           }
         }
       }
