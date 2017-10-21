@@ -6,6 +6,7 @@ function traverseDOM(node){
     for(var i=0;i<childLen;i++){
       var childTmp=node.childNodes[i];
       if(childTmp.nodeName="DIV"){
+        console.log(childTmp);
         if(childTmp.style){
           var obj=window.getComputedStyle(childTmp);
           if(obj.hasOwnProperty("position")){
