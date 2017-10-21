@@ -21,6 +21,6 @@ function traverseDOM(node){
   }
 }
 console.log(document.body);
-traverseDOM(document);
+traverseDOM(document.body);
 
 
