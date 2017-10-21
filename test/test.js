@@ -19,4 +19,8 @@ function traverseDOM(node){
     }
   }
 }
-traverseDOM(document);
+setTimeout(function(){
+  traverseDOM(document);
+  console.log("this is plugin output");
+},0);
+
