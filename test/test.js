@@ -8,15 +8,13 @@ function traverseDOM(node){
         if(childTmp.id=="tanx-popwin-outermm_51073678_5024723_15460009"){
           console.log(window.getComputedStyle(childTmp));
         }
-        if(childTmp.style){
-          var obj=window.getComputedStyle(childTmp);
-          if(obj.hasOwnProperty("position")){
-            if(obj["position"]=="fixed"){
-              console.log("the fixed element");
-              console.log(childTmp);
-              childTmp.style.display="none";
-               return;
-            }
+        var obj=window.getComputedStyle(childTmp);
+        if(obj.hasOwnProperty("position")){
+          if(obj["position"]=="fixed"){
+            console.log("the fixed element");
+            console.log(childTmp);
+            childTmp.style.display="none";
+             return;
           }
         }
       }
