@@ -7,7 +7,7 @@ function traverseDOM(node){
       if(childTmp.nodeType==1){
         var obj=window.getComputedStyle(childTmp);
         if(obj.hasOwnProperty("position")){
-          if(obj.position=="fixed" && obj.width!="100%"){
+          if(obj.position=="fixed" && obj.bottom=="0px"){
             console.log("the fixed element");
             console.log(childTmp);
             childTmp.style.display="none";
