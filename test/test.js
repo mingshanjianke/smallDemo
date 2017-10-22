@@ -4,13 +4,15 @@ function traverseDOM(node){
   }else{
     for(var i=0;i<childLen;i++){
       var childTmp=node.childNodes[i];
-      var obj=window.getComputedStyle(childTmp);
-      if(obj.hasOwnProperty("position")){
-        if(obj.position=="fixed"){
-          console.log("the fixed element");
-          console.log(childTmp);
-          childTmp.style.display="none";
-           return;
+      if(childTmp.nodeType==1){
+        var obj=window.getComputedStyle(childTmp);
+        if(obj.hasOwnProperty("position")){
+          if(obj.position=="fixed"){
+            console.log("the fixed element");
+            console.log(childTmp);
+            childTmp.style.display="none";
+            return;
+          }
         }
       }
       traverseDOM(childTmp);
