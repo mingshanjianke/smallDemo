@@ -5,6 +5,9 @@ function traverseDOM(node){
     for(var i=0;i<childLen;i++){
       var childTmp=node.childNodes[i];
       if(childTmp.nodeName=="DIV"){
+        if(childTmp.id=="tracking-ad"){
+          console.log("tracking-ad");
+        }
         var obj=window.getComputedStyle(childTmp);
         if(obj.hasOwnProperty("position")){
           if(obj.position=="fixed"){
