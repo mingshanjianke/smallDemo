@@ -25,7 +25,7 @@ function traverseDOM(node){
 
 setTimeout(function(){
   traverseDOM(document.body);
-},500);
+},1000);
 
 
 
