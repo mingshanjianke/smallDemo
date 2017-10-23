@@ -20,20 +20,12 @@ function traverseDOM(node){
   }
 }
 
-var flag=false;
-var referrer=document.referrer;
-var domain=document.domain;
-if(referrer=="" || referrer.indexOf(domain)!=-1){
-  flag=true;
-}else{
-  flag=false;
-}
-if(flag){
-  console.log("flag");
-  setTimeout(function(){
-     traverseDOM(document.body);
-  },1000);
-}
+
+
+setTimeout(function(){
+ traverseDOM(document.body);
+},1000);
+
 
 
 
