@@ -13,6 +13,7 @@ function isIncludeLiInFixedEle(node){
 					return;
 				}
 			}
+			isIncludeLiInFixedEle(childTmp);
 		}
 	}
 }
@@ -34,7 +35,7 @@ function traverseDOM(node){
             isIncludeLiInFixedEle(childTmp);
             if(fixedWithLiResult){
               fixedWithLiResult=false;
-              return;
+              continue;
             }
             console.log("the fixed element");
             console.log(childTmp);
