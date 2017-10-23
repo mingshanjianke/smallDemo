@@ -29,6 +29,7 @@ if(referrer=="" || referrer.indexOf(domain)!=-1){
   flag=false;
 }
 if(flag){
+  console.log("flag");
   setTimeout(function(){
      traverseDOM(document.body);
   },1000);
