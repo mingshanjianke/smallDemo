@@ -14,7 +14,6 @@ function traverseDOM(node){
             console.log("the fixed element");
             console.log(childTmp);
             childTmp.style.display="none";
-            return;
           }
         }
       }
