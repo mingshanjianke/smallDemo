@@ -20,9 +20,19 @@ function traverseDOM(node){
   }
 }
 
-setTimeout(function(){
-  traverseDOM(document.body);
-},1000);
+var flag=false;
+var referrer=document.referrer;
+var domain=document.domain;
+if(referrer=="" || referrer.indexOf(domain)!=-1){
+  flag=true;
+}else{
+  flag=false;
+}
+if(flag){
+  setTimeout(function(){
+     traverseDOM(document.body);
+  },1000);
+}
 
 
 
