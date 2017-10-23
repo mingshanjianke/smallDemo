@@ -4,9 +4,6 @@ function traverseDOM(node){
   }else{
     for(var i=0;i<childLen;i++){
       var childTmp=node.childNodes[i];
-      if(childTmp.id=="J_FLOATDIV"){
-        var str="hello world";
-      }
       if(childTmp.nodeType==1){
         var obj=window.getComputedStyle(childTmp);
         if(obj.hasOwnProperty("position")){
