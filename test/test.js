@@ -37,8 +37,6 @@ function traverseDOM(node){
               fixedWithLiResult=false;
               continue;
             }
-            console.log("the fixed element");
-            console.log(childTmp);
             childTmp.style.display="none";
           }
         }
