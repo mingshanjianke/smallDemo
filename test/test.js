@@ -31,7 +31,7 @@ function traverseDOM(node){
         }
         var obj=window.getComputedStyle(childTmp);
         if(obj.hasOwnProperty("position")){
-          if(obj.position=="fixed" && obj.bottom=="0px"){
+          if(obj.position=="fixed" && (obj.bottom=="0px" || obj.left=='0px' || obj.right=='0px')){
             isIncludeLiInFixedEle(childTmp);
             if(fixedWithLiResult){
               fixedWithLiResult=false;
