@@ -52,6 +52,10 @@ setTimeout(function(){
  traverseDOM(document.body);
 },1000);
 
+window.addEventListener('scroll',function(e){
+	traverseDOM(document.body);
+});
+
 
 
 
