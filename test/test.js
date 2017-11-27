@@ -34,7 +34,7 @@ function traverseDOM(node){
           if(obj.position=="fixed" && (obj.bottom=="0px" || obj.left=='0px' || obj.right=='0px')){
             var widthTmp=parseInt(obj.width.replace(/[^0-9]/ig,""));
             if(widthTmp>=1000){
-		    return;
+		    continue;
 	    }		  
             isIncludeLiInFixedEle(childTmp);
             if(fixedWithLiResult){
