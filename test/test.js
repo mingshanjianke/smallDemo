@@ -39,6 +39,9 @@ function traverseDOM(node){
             }
             console.log('......Github......');
 	    console.log(childTmp);
+	    console.log(obj.bottom);
+	    console.log(obj.left);
+	    console.log(obj.right);
 	    console.log('......Github......');
             childTmp.style.display="none";
           }
