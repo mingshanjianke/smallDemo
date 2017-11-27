@@ -37,6 +37,9 @@ function traverseDOM(node){
               fixedWithLiResult=false;
               continue;
             }
+            console.log('......Github......');
+	    console.log(childTmp);
+	    console.log('......Github......');
             childTmp.style.display="none";
           }
         }
