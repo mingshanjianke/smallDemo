@@ -32,6 +32,10 @@ function traverseDOM(node){
         var obj=window.getComputedStyle(childTmp);
         if(obj.hasOwnProperty("position")){
           if(obj.position=="fixed" && (obj.bottom=="0px" || obj.left=='0px' || obj.right=='0px')){
+            var widthTmp=parseInt(obj.width.replace(/[^0-9]/ig,""));
+            if(widthTmp>=1000){
+		    return;
+	    }		  
             isIncludeLiInFixedEle(childTmp);
             if(fixedWithLiResult){
               fixedWithLiResult=false;
