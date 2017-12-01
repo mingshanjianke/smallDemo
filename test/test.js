@@ -19,7 +19,10 @@ function isIncludeLiInFixedEle(node){
 }
 
 
-function traverseDOM(node){
+function traverseDOM(node){ 
+  if(!node){
+     return;	  
+  }	
   var childLen=node.childNodes.length;
   if(childLen==0){
   }else{
