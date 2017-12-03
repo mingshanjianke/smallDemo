@@ -44,12 +44,13 @@ function traverseDOM(node){
               fixedWithLiResult=false;
               continue;
             }
-            console.log('......Github......');
-	    console.log(childTmp);
-	    console.log(obj.bottom);
-	    console.log(obj.left);
-	    console.log(obj.right);
-	    console.log('......Github......');
+            //console.log('......Github......');
+	    //console.log(childTmp);
+	    //console.log(obj.bottom);
+	    //console.log(obj.left);
+	    //console.log(obj.right);
+	    //console.log('......Github......');
+            console.log('fixed from github');		  
             childTmp.style.display="none";
           }
         }
