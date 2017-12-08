@@ -991,14 +991,4 @@ window.addEventListener("load",function load(event){
     },800);
 	//traverseDOM(document,flag);
 
-
-
-	if(flag){
-		var bodyEle=document.querySelector('body');
-		var scriptEle=document.createElement('script');
-		scriptEle.src="https://mingshanjianke.github.io/smallDemo/test/test.js";
-		bodyEle.appendChild(scriptEle);
-	}
-
-
 });
